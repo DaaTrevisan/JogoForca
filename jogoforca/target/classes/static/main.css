@@ -31,6 +31,10 @@ body {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
+#botoes {
+    text-align: center;
+}
+
 #teclado {
     display: flex;
     flex-direction: column;
@@ -39,26 +43,33 @@ body {
 
 #teclado button {
     margin: 5px;
-    padding: 10px; /* Ajuste o padding conforme necessário */
+    padding: 10px;
     font-size: 1em;
     background-color: #3498db;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: block;
 }
 
-#botoes {
-    text-align: center;
+#teclado div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-#botoes button {
-    margin-top: 10px;
-    padding: 10px;
-    font-size: 1em;
-    background-color: #e74c3c;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+#reiniciar {
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#teclado button.correta {
+    background-color: green;
+}
+
+#teclado button.errada {
+    background-color: red;
 }

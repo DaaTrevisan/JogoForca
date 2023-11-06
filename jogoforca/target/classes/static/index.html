@@ -12,19 +12,13 @@
 
 <body>
     <div id="TUDO">
-        <!-- Palavra a ser descoberta no topo -->
         <div id="palavra">
             <h2>Palavra: <span th:text="${palavra}"></span></h2>
         </div>
-
-        <!-- Imagem à esquerda abaixo da palavra -->
         <div id="imagens">
             <img src="/Imagens/forca0.png">
         </div>
-
-        <!-- Teclado à direita da imagem -->
         <div id="teclado">
-            <!-- Adicione as letras do teclado aqui -->
             <div id="linha1">
                 <button>Q</button>
                 <button>W</button>
@@ -48,7 +42,7 @@
                 <button>K</button>
                 <button>L</button>
             </div>
-            <div id="linha2">
+            <div id="linha3">
                 <button>Z</button>
                 <button>X</button>
                 <button>C</button>
@@ -57,11 +51,8 @@
                 <button>N</button>
                 <button>M</button>
             </div>
-
         </div>
-
-        <!-- Botão para reiniciar a forca e alterar a palavra -->
-        <div id="botoes">
+        <div id="div_reiniciar">
             <button id="reiniciar">Reiniciar</button>
         </div>
     </div>
